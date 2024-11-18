@@ -1,5 +1,18 @@
+body {
+    background: #eee;
+    padding: 0;
+}
+
 .todo-app {
     font-family: sans-serif;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 2rem;
+    background: #fafafa;
+    max-width: 1024px;
+    height: calc(100vh - 6rem - 4rem);
+    overflow: auto;
+    text-align: center;
 }
 
 /** add todo **/
@@ -9,6 +22,8 @@
 
 /** todo list **/
 .todo-list {
+    display: grid;
+    gap: 5px;
     margin-top: 1rem;
     text-align: left;
     list-style: none;
@@ -19,4 +34,11 @@
     font-family: monospace;
     cursor: pointer;
     line-height: 1.5;
+}
+
+.add-todo-row{
+    display: flex; 
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
 }
